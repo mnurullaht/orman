@@ -1,0 +1,19 @@
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    div {
+        float: right;
+        width: 80px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    div {
+        float: right;;             
+        width: 11%;
+    }
+   }
+
+   @media (min-width: 1200px) { 
+    div {
+        float: right;             
+        width: 13%;
+    }
+    }
