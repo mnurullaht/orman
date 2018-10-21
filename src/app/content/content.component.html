@@ -16,18 +16,15 @@
   </thead>
   <tbody>
 
-      <tr *ngFor="let user of users$">
+      <tr *ngFor="let s of sd">
       <th scope="row"></th>               
-      <td routerLink="/details/{{user.id}}">{{ user.id }}></td>
-      <td routerLink="/details/{{user.id}}">{{ user.name }}></td>
-      <td routerLink="/details/{{user.id}}">{{ user.email }}></td>                  
-      <td routerLink="/details/{{user.id}}">{{ user.address.street }}></td>
-      <td routerLink="/details/{{user.id}}">{{ user.address.suite }}></td>
-      <td routerLink="/details/{{user.id}}">{{ user.address.city }}></td>
-      <td routerLink="/details/{{user.id}}">{{ user.address.zipcode }}></td>
-      <td routerLink="/details/{{user.id}}">{{ user.address.geo.lat }}></td>
-      <td routerLink="/details/{{user.id}}">{{ user.address.geo.lng }}></td>
+      <td >{{  s.il }}</td>
+      <td >{{  s.ilce }}</td>
+      <td >{{  s.enDusukGun1 }}</td>                  
+      <td >{{  s }}</td>
+ 
       </tr>
   </tbody>
 </table> 
+
 </div>

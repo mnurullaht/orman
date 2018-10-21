@@ -1,0 +1,102 @@
+
+export class Ilce {
+    aciklama: string;
+    alternatifHadiseIstNo: number;
+    boylam: number;
+    enlem: number;
+    gunlukTahminIstNo: number;
+    il: string;
+    ilce: string;
+    merkezId: number;
+    modelId: number;
+    saatlikTahminIstNo: number
+    sondurumIstNo: number;
+}
+export class Tahmin {
+    enDusukGun1: number;
+    enDusukGun2: number;
+    enDusukGun3: number;
+    enDusukGun4: number;
+    enDusukGun5: number;
+    enDusukNemGun1: number;
+    enDusukNemGun2: number;
+    enDusukNemGun3: number;
+    enDusukNemGun4: number;
+    enDusukNemGun5: number;
+    enYuksekGun1: number;
+    enYuksekGun2: number;
+    enYuksekGun3: number;
+    enYuksekGun4: number;
+    enYuksekGun5: number;
+    enYuksekNemGun1: number;
+    enYuksekNemGun2: number;
+    enYuksekNemGun3: number;
+    enYuksekNemGun4: number;
+    enYuksekNemGun5: number;
+    hadiseGun1: string;
+    hadiseGun2: string;
+    hadiseGun3: string;
+    hadiseGun4: string;
+    hadiseGun5: string;
+    istNo: number;
+    ruzgarHizGun1: number;
+    ruzgarHizGun2: number;
+    ruzgarHizGun3: number;
+    ruzgarHizGun4: number;
+    ruzgarHizGun5: number;
+    ruzgarYonGun1: number;
+    ruzgarYonGun2: number;
+    ruzgarYonGun3: number;
+    ruzgarYonGun4: number;
+    ruzgarYonGun5: number;
+    tarihGun1: Date;
+    tarihGun2: Date;
+    tarihGun3: Date;
+    tarihGun4: Date;
+    tarihGun5: Date;
+}
+
+export class ShowData{
+    il:string;
+    ilce:string;
+    tarihGun1: Date;
+    tarihGun2: Date;
+    tarihGun3: Date;
+    tarihGun4: Date;
+    tarihGun5: Date;
+    enDusukGun1: number;
+    enDusukGun2: number;
+    enDusukGun3: number;
+    enDusukGun4: number;
+    enDusukGun5: number;
+    enDusukNemGun1: number;
+    enDusukNemGun2: number;
+    enDusukNemGun3: number;
+    enDusukNemGun4: number;
+    enDusukNemGun5: number;
+    enYuksekGun1: number;
+    enYuksekGun2: number;
+    enYuksekGun3: number;
+    enYuksekGun4: number;
+    enYuksekGun5: number;
+    enYuksekNemGun1: number;
+    enYuksekNemGun2: number;
+    enYuksekNemGun3: number;
+    enYuksekNemGun4: number;
+    enYuksekNemGun5: number;
+    hadiseGun1: string;
+    hadiseGun2: string;
+    hadiseGun3: string;
+    hadiseGun4: string;
+    hadiseGun5: string;
+    ruzgarHizGun1: number;
+    ruzgarHizGun2: number;
+    ruzgarHizGun3: number;
+    ruzgarHizGun4: number;
+    ruzgarHizGun5: number;
+    ruzgarYonGun1: number;
+    ruzgarYonGun2: number;
+    ruzgarYonGun3: number;
+    ruzgarYonGun4: number;
+    ruzgarYonGun5: number;
+}

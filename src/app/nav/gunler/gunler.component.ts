@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-gunler',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GunlerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ds:DataService) { }
 
   ngOnInit() {
+  }
+
+  tarihChange(gun:number){
+    this.ds.tarihDegisti(gun);
   }
 
 }

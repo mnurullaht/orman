@@ -1,11 +1,11 @@
 <div  class="col-md-3 col-sm-12 col-xs-12">
-<select name="İL SEÇİMİ" class="form-control" ng-model="selectedIl" ng-change="ilChange(selectedIl)">                                 
-          <option value="01" selected="selected">Adana</option>
-          <option value="02">Adıyaman</option>
-          <option value="03">Afyonkarahisar</option>
-          <option value="04">Ağrı</option>
-          <option value="05">Amasya</option>
-          <option value="06">Ankara</option>
+<select name="İL SEÇİMİ" class="form-control" (change)="ilChange($event)">                                 
+          <option value="Adana" selected="selected">Adana</option>
+          <option value="Adıyaman">Adıyaman</option>
+          <option value="Afyonkarahisar">Afyonkarahisar</option>
+          <option value="Ağrı">Ağrı</option>
+          <option value="Amasya">Amasya</option>
+          <option value="Ankara">Ankara</option>
           <option value="07">Antalya</option>
           <option value="08">Artvin</option>
           <option value="09">Aydın</option>

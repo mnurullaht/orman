@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-iller',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IllerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ds:DataService) { }
 
   ngOnInit() {
+    
   }
-
+ 
+  ilChange(evt):void{
+    console.log(evt.target.value);
+    this.ds.ilDegisti(evt.target.value);
+  }
 }
