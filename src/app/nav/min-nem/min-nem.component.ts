@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ContentComponent} from '../../content/content.component';
+import { DataService } from '../../data.service';
 
 @Component({
   selector: 'app-min-nem',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MinNemComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ds:DataService) { }
+
+  content:ContentComponent;
 
   ngOnInit() {
   }
 
+  NemDegisti(evt){
+    this.ds.minNemDegisti(evt.target.value);
+    console.log(evt.target.value);
+  }
 }

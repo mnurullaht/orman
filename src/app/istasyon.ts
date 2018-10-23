@@ -59,6 +59,14 @@ export class Tahmin {
 export class ShowData{
     il:string;
     ilce:string;
+    tarih:Date;
+    enDusuk:number;
+    enDusukNem:number;
+    enYuksek:number;
+    enYuksekNem:number;
+    hadise:string;
+    ruzgarHiz:number;
+    ruzgarYon:number;
     tarihGun1: Date;
     tarihGun2: Date;
     tarihGun3: Date;

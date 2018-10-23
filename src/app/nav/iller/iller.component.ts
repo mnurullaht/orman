@@ -17,5 +17,6 @@ export class IllerComponent implements OnInit {
   ilChange(evt):void{
     console.log(evt.target.value);
     this.ds.ilDegisti(evt.target.value);
+    
   }
 }

@@ -15,14 +15,17 @@
     </tr>
   </thead>
   <tbody>
-
-      <tr *ngFor="let s of sd">
-      <th scope="row"></th>               
-      <td >{{  s.il }}</td>
-      <td >{{  s.ilce }}</td>
-      <td >{{  s.enDusukGun1 }}</td>                  
-      <td >{{  s }}</td>
- 
+      <tr *ngFor="let s of sdFiltered">
+        <td>{{ s.il }}</td>
+        <td>{{ s.ilce }}</td>
+        <td>{{ s.tarih  | date: 'dd.MM.yyyy' }}</td>                  
+        <td>{{ s.enDusuk }}</td>
+        <td>{{ s.enYuksek }} </td>
+        <td>{{ s.enDusukNem }} </td>
+        <td>{{ s.enYuksekNem }} </td>
+        <td>{{ s.hadise }} </td>
+        <td>{{ s.ruzgarYon }} </td>
+        <td>{{ s.ruzgarHiz }} </td>
       </tr>
   </tbody>
 </table> 
