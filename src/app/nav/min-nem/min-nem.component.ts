@@ -18,6 +18,6 @@ export class MinNemComponent implements OnInit {
 
   NemDegisti(evt){
     this.ds.minNemDegisti(evt.target.value);
-    console.log(evt.target.value);
+    //console.log(evt.target.value);
   }
 }

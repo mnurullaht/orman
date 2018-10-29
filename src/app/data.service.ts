@@ -20,6 +20,7 @@ export class DataService {
   seciliIl: string = "Adana";
   ilce: Ilce[];
   sd: ShowData[];
+  sdFiltered:ShowData[];
   minNemEsik: number = 30;
   seciliGun: number = 1;
 
@@ -33,10 +34,9 @@ export class DataService {
 
   ilDegisti(evt) {
     this.ilDegis.emit(evt);
-    this.getIlce(evt).subscribe(ilceler => this.ilce = ilceler as Ilce[]);
   }
+
   tarihDegisti(gun: number): void {
-    //this.tarihDegis.emit(gun);
     this.seciliGun = gun;
     this.sd.forEach(sd => {
       sd.tarih=eval("sd.tarihGun" + this.seciliGun);
@@ -48,7 +48,6 @@ export class DataService {
       sd.ruzgarHiz = eval("sd.ruzgarHizGun" + this.seciliGun);
       sd.ruzgarYon = eval("sd.ruzgarYonGun" + this.seciliGun);
     })
-    this.minNemDegis.emit(this.minNemEsik);
   }
 
   minNemDegisti(minNem: number): void {
@@ -61,23 +60,18 @@ export class DataService {
     this.getIlce(il).subscribe(ilceler => {
       this.ilceVeTahmin(ilceler as Ilce[]);
       this.sdDoldu.emit(this.sd);
-      this.minNemDegis.emit(this.minNemEsik);
     });
   }
 
 
   ilceVeTahmin(ilceler: Ilce[]): void {
     ilceler.forEach(ilce => {
-
-
       this.getIlceTahmin(ilce.merkezId).subscribe(
         tahmin => {
           if (tahmin[0] != undefined) {
             var sd1: ShowData = new ShowData();
             sd1.il = ilce.il;
             sd1.ilce = ilce.ilce;
-            //tarihGun:Date;
-
             sd1.tarihGun1 = tahmin[0].tarihGun1 as Date;
             sd1.tarihGun2 = tahmin[0].tarihGun2 as Date;
             sd1.tarihGun3 = tahmin[0].tarihGun3 as Date;

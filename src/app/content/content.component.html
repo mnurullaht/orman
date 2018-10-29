@@ -15,7 +15,7 @@
     </tr>
   </thead>
   <tbody>
-      <tr *ngFor="let s of sdFiltered">
+      <tr *ngFor="let s of sd">
         <td>{{ s.il }}</td>
         <td>{{ s.ilce }}</td>
         <td>{{ s.tarih  | date: 'dd.MM.yyyy' }}</td>                  
@@ -23,8 +23,8 @@
         <td>{{ s.enYuksek }} </td>
         <td>{{ s.enDusukNem }} </td>
         <td>{{ s.enYuksekNem }} </td>
-        <td>{{ s.hadise }} </td>
-        <td>{{ s.ruzgarYon }} </td>
+        <td><img src="{{iconPath + s.hadise }}.svg"/> </td>
+        <td> <img src="{{rYonPath}}" [ngStyle]="{'transform':'rotate('+s.ruzgarYon+'deg)'}"/> </td>
         <td>{{ s.ruzgarHiz }} </td>
       </tr>
   </tbody>
